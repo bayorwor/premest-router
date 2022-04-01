@@ -4,13 +4,14 @@ function Blog() {
   return (
     <div>
       <h1> Welcome to the Blogpage </h1>
-      <br />
+
       <div>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
-          fuga? Minus quos, numquam corporis tempora impedit, at maiores soluta
-          mollitia repellat repellendus, magnam odit fugit. Blanditiis delectus
-          repellat illum dolor, praesentium maxime tempore?
+          Excepteur laboris proident reprehenderit dolore quis culpa laboris
+          nostrud ad laboris incididunt. Do elit minim veniam culpa minim
+          voluptate nostrud laborum proident commodo laborum labore tempor
+          dolor. Officia ea aliqua ipsum sunt mollit commodo aliquip pariatur
+          exercitation cillum eiusmod.
         </p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,

@@ -4,7 +4,7 @@ function Home() {
   return (
     <div>
       <h1> Welcome to the Homepage </h1>
-      <br />
+
       <div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia

@@ -4,7 +4,7 @@ function About() {
   return (
     <div>
       <h1> Welcome to the Aboutpage </h1>
-      <br />
+
       <div>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam ullam

@@ -4,7 +4,7 @@ function Blog() {
   return (
     <div>
       <h1> Welcome to the Blogpage </h1>
-      <br />
+
       <div>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
