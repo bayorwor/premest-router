@@ -7,15 +7,12 @@ function Home() {
   return (
     <div>
       <div className="banner">
-        <h1> Welcome to Our Blog Post Site</h1>
+        <h1> Welcome to my webpage</h1>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
           laudantium enim voluptatem reiciendis magnam? Dignissimos eos deleniti
           quaerat excepturi neque et ut! Quae necessitatibus nulla enim fugiat,
-          commodi suscipit tenetur? Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Eos aperiam ea deleniti neque reprehenderit harum
-          quisquam possimus nam dolor rerum ratione id dignissimos quia
-          inventore vitae mollitia, sit corporis unde.
+          commodi suscipit tenetur?
         </p>
 
         <div className="actions-wrap">

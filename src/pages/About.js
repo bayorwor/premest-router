@@ -1,35 +1,35 @@
 import withLayout from "./withLayout";
+import { useAboutContext } from "../context/about.context";
 
 function About() {
+  const { about } = useAboutContext();
   return (
-    <div>
-      <h1> Welcome to the Aboutpage </h1>
-      <br />
-      <div>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam ullam
-          pariatur labore, explicabo neque voluptatum quasi quisquam recusandae
-          et magni animi veniam illo id ad itaque est excepturi voluptates modi
-          molestiae temporibus repellendus impedit quas non! Voluptates voluptas
-          iure illo maiores ex, doloremque ea vero. Maxime neque ut, dolore
-          nostrum dolores quia est nobis, iste et repellendus ducimus
-          aspernatur, perspiciatis autem! Consequuntur consequatur eligendi
-          laboriosam officia, aperiam aliquid delectus id.
-        </p>
-        <p>
-          Excepteur laboris proident reprehenderit dolore quis culpa laboris
-          nostrud ad laboris incididunt. Do elit minim veniam culpa minim
-          voluptate nostrud laborum proident commodo laborum labore tempor
-          dolor. Officia ea aliqua ipsum sunt mollit commodo aliquip pariatur
-          exercitation cillum eiusmod.
-        </p>
-        <p>
-          Excepteur laboris proident reprehenderit dolore quis culpa laboris
-          nostrud ad laboris incididunt. Do elit minim veniam culpa minim
-          voluptate nostrud laborum proident commodo laborum labore tempor
-          dolor. Officia ea aliqua ipsum sunt mollit commodo aliquip pariatur
-          exercitation cillum eiusmod.
-        </p>
+    <div
+      style={{
+        maxWidth: "700px",
+        margin: "auto",
+        padding: "20px 0"
+      }}
+    >
+      <h2>About Me</h2>
+      <div style={{ marginTop: "10px" }}>
+        <h3>Name</h3>
+        <p>{about.name}</p>
+      </div>
+      <div style={{ marginTop: "10px" }}>
+        <h3>Bio</h3>
+        <p>{about.bio}</p>
+      </div>
+      <div style={{ marginTop: "10px" }}>
+        <h3>Hobbies</h3>
+        {about.hobbies.map((hobby) => (
+          <p
+            key={hobby}
+            style={{ display: "inline-block", marginRight: "10px" }}
+          >
+            {hobby}
+          </p>
+        ))}
       </div>
     </div>
   );

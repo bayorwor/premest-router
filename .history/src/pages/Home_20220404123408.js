@@ -7,7 +7,7 @@ function Home() {
   return (
     <div>
       <div className="banner">
-        <h1> Welcome to Our Blog Post Site</h1>
+        <h1> Welcome to my webpage</h1>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
           laudantium enim voluptatem reiciendis magnam? Dignissimos eos deleniti

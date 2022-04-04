@@ -1,4 +1,5 @@
 @import url(reset.css);
+@import url(home.css);
 
 .layout {
   height: 100%;
@@ -9,7 +10,7 @@
 
 .main-component {
   flex: 1;
-  max-width: 700px;
+  min-width: 95%;
   margin: auto;
 }
 
@@ -18,6 +19,17 @@ footer {
   padding: 10px;
   text-align: center;
   color: whitesmoke;
+}
+
+button {
+  outline: 0;
+  margin: 10px;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 3px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .appbar {
@@ -35,11 +47,69 @@ footer {
 }
 
 .nav-link > a {
-  margin: 10px;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 5px 10px;
   text-decoration: none;
   color: white;
 }
 
 .nav-link > a:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid white;
+  border-bottom-width: 0%;
+}
+
+.active > a {
+  border-bottom: 2px solid white;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: crimson;
+  transition: 0.4s;
+}
+
+.dark-check + .slider {
+  background-color: white;
+}
+
+.light-check + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

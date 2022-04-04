@@ -1,0 +1,31 @@
+.banner {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 150px;
+}
+
+.banner > h1 {
+  font-size: 50px;
+}
+
+.banner > p {
+  font-size: 20px;
+}
+
+.actions-wrap > button:active {
+  transform: scale(0.9);
+}
+
+.btn-outline {
+  color: crimson;
+  background-color: transparent;
+}
+
+.btn-contain {
+  background-color: crimson;
+  color: white;
+}

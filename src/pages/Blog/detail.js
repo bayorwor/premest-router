@@ -16,7 +16,7 @@ function BlogDetail() {
         <div
           style={{
             display: "flex",
-            flexDirection: "column",
+            flexDirection: "column"
           }}
         >
           <h2 style={{ margin: "5px 0", fontSize: "20px" }}>{post.title}</h2>
